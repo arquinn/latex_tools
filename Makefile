@@ -1,6 +1,9 @@
 OUTPAPERS=$(addsuffix .pdf, ${PAPERNAMES})
 
-.PHONY: $(OUTPAPERS) clean
+testdir=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+export TEXMFHOME=${testdir}/texmf
+
+.PHONY: $(OUTPAPERS) latex_clean
 
 $(OUTPAPERS): %.pdf: %.tex
 	latexmk -pdf -pdflatex="yes '' | pdflatex" -use-make $<
@@ -8,4 +11,5 @@ $(OUTPAPERS): %.pdf: %.tex
 latex_clean:
 	latexmk -C
 	rm -f *.bbl
+	@echo "texmfhome is: ${TEXMFHOME}"
 
