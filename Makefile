@@ -3,7 +3,7 @@ OUTPAPERS=$(addsuffix .pdf, ${PAPERNAMES})
 ifdef TEXOUTDIR
 OUTARG="-outdir=${TEXOUTDIR}"
 else
-OUTARG=""
+OUTARG=
 endif
 
 testdir=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
@@ -15,6 +15,6 @@ $(OUTPAPERS): %.pdf: %.tex
 	latexmk -pdf -pdflatex="yes '' | pdflatex" -use-make ${OUTARG} $<
 
 latex_clean:
-	latexmk ${OUTARG} -C
+	latexmk ${OUTARG} -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make -C
 	rm -f ${TEXOUTDIR}/*.bbl
 
