@@ -83,6 +83,7 @@
   \mbox{ }\hspace{0.6in}
   \parbox{5.3in}{#6}
  \end{singlespace}
+ \newpage
 }
 
 \def\initializefrontsections{
@@ -98,16 +99,19 @@
  \twoinmar
 }
 
-\def\copyrightpage#1{
+\def\copyrightpage#1#2#3{
  \ttlpg
  \hbox{ }
  \vertadjust
  \vfill
  \begin{center}
-  \begin{singlespace}
-   \underline{\copyright\hspace{0.2in}{#1}\hspace{0.2in}\number\year}\\
-   \vspace{0.1in}All Rights Reserved
-  \end{singlespace}
+  \begin{doublespace}
+   #1 \\
+   #2 \\
+   ORCID iD: #3 \\ 
+   \vspace{\baselineskip}
+   \copyright\hspace{0.1in}{#1}\hspace{0.1in}\number\year\\
+  \end{doublespace}
  \end{center}
  \vfill
 }
@@ -157,7 +161,7 @@
  \vskip 1.0em plus 1pt \@tempdima 1.5em \begingroup % em is the width of capital M for the current font. -jg
  \parindent \z@ \rightskip \@pnumwidth
  \parfillskip -\@pnumwidth
- {\bf \leavevmode #1}\dotfill \hbox to\@pnumwidth{\hss #2}\par
+ {\bf \leavevmode #1}\hfill \hbox to\@pnumwidth{\hss #2}\par
  \endgroup
 }
 
@@ -198,7 +202,7 @@
  \vspace{0.7in}
  \begin{singlespace}
   \@starttoc{lof}\if@restonecol\twocolumn\fi
-  \addtocontents{lof}{\noindent\underline{\bf Figure}\hfill\rm\protect\newline}
+  \addtocontents{lof}{\noindent{\bf Figure}\hfill\rm\protect\newline}
  \end{singlespace}
 }
 
@@ -212,7 +216,7 @@
  \vspace{0.7in}
  \begin{singlespace}
   \@starttoc{lot}\if@restonecol\twocolumn\fi
-  \addtocontents{lot}{\noindent\underline{\bf Table}\hfill\rm\protect\newline}
+  \addtocontents{lot}{\noindent{\bf Table}\hfill\rm\protect\newline}
  \end{singlespace}
 }
 
@@ -259,24 +263,24 @@
  \end{singlespace} 
 }
 
-\def\startabstractpage#1#2#3{% This formats the optional in-dissertation abstract - jg
+\def\startabstractpage{% This formats the optional in-dissertation abstract - jg
  \newpage
  \addcontentsline{toc}{chapter}{ABSTRACT}
  \@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn\fi
  \hbox{ }
  \twoinmar
  \centerline{\large\bf ABSTRACT}
- \vspace{0.25in}
- \begin{center}
-  \begin{singlespace}
-   #1 \\
-  \end{singlespace}
-   by \\
-   #2 \\
- \end{center}
+ %\vspace{0.25in}
+ %\begin{center}
+ % \begin{singlespace}
+ %  #1 \\
+ % \end{singlespace}
+ %  by \\
+ %  #2 \\
+ %\end{center}
  \vspace{0.4in}
- \noindent #3
- \vspace{0.25in}\\
+ %\noindent #3
+ %\vspace{0.25in}\\
 }
 
 %-- Start chapters --
@@ -467,21 +471,21 @@
  \sfcode`\.=1000\relax}
 \let\endthebibliography=\endlist
 
-\def\startextabstractpage#1#2#3{% This formats an external Abstract that can be printed at the end of the document. Comment it out in thesis.tex when not needed. - jg
+\def\startextabstractpage{% This formats an external Abstract that can be printed at the end of the document. Comment it out in thesis.tex when not needed. - jg
  \ttlpg
  \@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn\fi
  \hbox{ }
  \centerline{\large\bf ABSTRACT}
- \vspace{0.25in}
- \begin{center}
-  \begin{singlespace}
-   #1 \\
-  \end{singlespace}
-   by \\
-   #2 \\
- \end{center}
+ %\vspace{0.25in}
+ %\begin{center}
+  %\begin{singlespace}
+   %#1 \\
+  %\end{singlespace}
+   %by \\
+   %#2 \\
+ %\end{center}
  \vspace{0.4in}
- \noindent #3
- \vspace{0.25in}\\
+ %\noindent #3
+ %\vspace{0.25in}\\
  \pagestyle{empty}
 }
