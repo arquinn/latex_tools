@@ -66,6 +66,7 @@
 
 \pretitle{\begin{center}\vspace{-.5in}
 ASPLOS Submission \#\asplossubmissionnumber -- Confidential Draft -- Do Not Distribute!!\\
+%Pre-publication draft, conditonally accepted to ASPLOS 18 with shepherding\\
 \vspace{.35in}
 \normalfont\Large\bfseries}
 \posttitle{\par\end{center}}
