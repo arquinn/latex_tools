@@ -5,7 +5,7 @@ include:
 
 * full.bib
 * Generic Makefile
-* Templates?
+* Latex Templates
 
 ## Usage ##
 This file holds a generic makefile (Makefile), to use that makefile, add this
@@ -25,4 +25,7 @@ include latex_tools/Makefile
 .PHONY: clean
 clean: latex_clean
 ```
+
+The resulting makefile will automatically detect dependencies and do incremental
+builds to build paper.pdf from "paper.tex".
 
