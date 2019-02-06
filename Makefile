@@ -6,12 +6,13 @@ else
 OUTARG=
 endif
 
-testdir=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
-export TEXMFHOME=${testdir}/texmf
+#testdir=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+#export TEXMFHOME:=${TEXMFHOME}:${testdir}/texmf
 
 .PHONY: $(OUTPAPERS) latex_clean
 
 $(OUTPAPERS): %.pdf: %.tex
+	echo "TEXMFHOME: ${TEXMFHOME}"
 	latexmk -pdf -pdflatex="yes '' | pdflatex" -use-make ${OUTARG} $<
 
 latex_clean:
