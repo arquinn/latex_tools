@@ -179,6 +179,11 @@
 @STRING{USENIX10 = PROC # "2010" # USENIX}
 @STRING{USENIX11 = PROC # "2011" # USENIX}
 @STRING{USENIX12 = PROC # "2012" # USENIX}
+@STRING{USENIX13 = PROC # "2013" # USENIX}
+@STRING{USENIX14 = PROC # "2014" # USENIX}
+@STRING{USENIX15 = PROC # "2015" # USENIX}
+@STRING{USENIX16 = PROC # "2016" # USENIX}
+@STRING{USENIX17 = PROC # "2017" # USENIX}
 
 @STRING{HOTOS = " IEEE Workshop on Hot Topics in Operating Systems)"}
 @STRING{HOTOS95 = PROC # "5th" # HOTOS}
@@ -313,7 +318,61 @@
 @STRING{MOBS07 = "Proceedings of the 2007 Workshop on Modeling, Benchmarking and Simulation"}
 @STRING{RELDSDB = "Proceedings of the Symposium on Reliability in Distributed Software and Database Systems"}
 
-@ARTICLE{Choi91,
+@inproceedings{Balzer69,
+  author = {Balzer, R. M.},
+  title = {EXDAMS: Extendable Debugging and Monitoring System},
+  booktitle = {Proceedings of the May 14-16, 1969, Spring Joint Computer Conference},
+  series = {AFIPS '69 (Spring)},
+  year = {1969},
+  location = {Boston, Massachusetts},
+  pages = {567--580},
+  numpages = {14},
+  url = {http://doi.acm.org/10.1145/1476793.1476881},
+  doi = {10.1145/1476793.1476881},
+  acmid = {1476881},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+}
+
+@article{Pan88,
+  author = {Pan, Douglas Z. and Linton, Mark A.},
+  title = {Supporting Reverse Execution for Parallel Programs},
+  journal = {SIGPLAN Not.},
+  issue_date = {Jan. 1989},
+  volume = {24},
+  number = {1},
+  month = nov,
+  year = {1988},
+  issn = {0362-1340},
+  pages = {124--129},
+  numpages = {6},
+  url = {http://doi.acm.org/10.1145/69215.69227},
+  doi = {10.1145/69215.69227},
+  acmid = {69227},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+}
+
+@article{Chambers89,
+  author = {Chambers, C. and Ungar, D.},
+  title = {Customization: Optimizing Compiler Technology for SELF, a Dynamically-typed Object-oriented Programming Language},
+  journal = {SIGPLAN Not.},
+  issue_date = {July 1989},
+  volume = {24},
+  number = {7},
+  month = jun,
+  year = {1989},
+  issn = {0362-1340},
+  pages = {146--160},
+  numpages = {15},
+  url = {http://doi.acm.org/10.1145/74818.74831},
+  doi = {10.1145/74818.74831},
+  acmid = {74831},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+}
+
+@article{Choi91,
   author = {Jong-Deok Choi and Barton P. Miller and Robert H. B. Netzer},
   title = {Techniques for Debugging Parallel Programs with Flowback Analysis},
   journal = {ACM Transactions on Programming Languages and Systems (TOPLAS)},
@@ -324,7 +383,17 @@
   month = {October},
 }
 
-@ARTICLE{Itzkovitz99,
+@inproceedings{Brustoloni96,
+  author =	 {Jos\&\#233; Carlos Brustoloni and Peter Steenkiste},
+  title =	 {Effects of buffering semantics on {I/O} performance},
+  booktitle =	 OSDI96,
+  month =        {October},
+  year =	 {1996},
+  address =	 {Seattle, WA},
+}
+
+
+@article{Itzkovitz99,
   author = {Ayal Itzkovitz and Assaf Schuster and Oren {Zeev-Ben-Mordehai}},
   title = {Toward Integration of Data Race Detection in {DSM} Systems},
   journal = {Journal of Parallel and Distributed Computing},
@@ -333,15 +402,6 @@
   pages = {180--203},
   number = {2},
   month = {November},
-}
-
-@INPROCEEDINGS{Ratasaworabhan09,
-  author = {Paruj Ratasaworabhan and Martin Burtscher and Darko Kirovski and Benjamin Zorn and Rahul Nagpal and Karthik Pattabiraman},
-  title = {Detecting and Tolerating Asymmetric Races},
-  booktitle = PPOPP09,
-  year = {2009},
-  pages = {173--184},
-  month = {February},
 }
 
 @InProceedings{Song04,
@@ -364,13 +424,13 @@
   pages = {882--893}
 }
 
-@inproceedings{Brustoloni96,
-  author =	 {Jos\&\#233; Carlos Brustoloni and Peter Steenkiste},
-  title =	 {Effects of buffering semantics on {I/O} performance},
-  booktitle =	 OSDI96,
-  month =        {October},
-  year =	 {1996},
-  address =	 {Seattle, WA},
+@inproceedings{Ratasaworabhan09,
+  author = {Paruj Ratasaworabhan and Martin Burtscher and Darko Kirovski and Benjamin Zorn and Rahul Nagpal and Karthik Pattabiraman},
+  title = {Detecting and Tolerating Asymmetric Races},
+  booktitle = PPOPP09,
+  year = {2009},
+  pages = {173--184},
+  month = {February},
 }
 
 @inproceedings{Portokalidis10,
@@ -3790,7 +3850,8 @@ pages = {190--201}
  }
 
 @inproceedings{Yuan10,
-author = {Ding Yuan and Haohui Mai and Weiwei Xiong and Lin Tan and Yuanyuan Zhou and Shankar Pasupathy},  
+author = {Ding Yuan and Haohui Mai and Weiwei Xiong and Lin Tan and
+                  Yuanyuan Zhou and Shankar Pasupathy},
 title = {{SherLog}: Error Diagnosis by Connecting Clues from Run-Time Logs},
 booktitle = ASPLOS10,
 address = {Pittsburgh, PA},
@@ -3798,6 +3859,17 @@ month = {March},
 year = {2010},
 pages = {143--154}
 }
+
+@inproceedings{Yuan12,
+author = {Ding Yuan and Soyeun Park and Yuanyuan Zhou},
+title = {Characterising Logging Practices in Open-Source Software},
+booktitle = {Proceedings of the 34th International Conference on
+                  Software Engineering (ICSE)},
+address = {Zurich, Switzerland},
+month = {June},
+year = {2012},
+}
+
 
 @inproceedings{Lebeck00,
 author = {Alvin R. Lebeck and Xiaobo Fan and Heng Zeng and Carla S. Ellis},  
@@ -11792,7 +11864,20 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
  acmid = {502042},
  publisher = {ACM},
  address = {New York, NY, USA},
-} 
+}
+
+@article{Ernst01,
+  author    = {Michael D. Ernst and Jake Cockrell and William
+                  G. Griswold and David Notkin},
+  title     = {Dynamically Discovering Likely Program Invariants to
+                  Support Program Evolution},
+  journal   = {IEEE Transactions on Software Engineering},
+  volume    = {27},
+  number    = {2},
+  year      = {2001},
+  month     = {February},
+}
+
 
 @inproceedings{Li06,
  author = {Li, Zhenmin and Tan, Lin and Wang, Xuanhui and Lu, Shan and Zhou, Yuanyuan and Zhai, Chengxiang},
@@ -11810,7 +11895,21 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {bug characteristics, bug detection, empirical study, open source, security},
-} 
+}
+
+@inproceedings{Demsky06,
+  author = {Brian Demsky and Michael D. Ernst and Philip J. Guo and
+                  Stephen McCarmant and Jeff H. Perkins and Martin
+                  Rinard},
+  title = {Inference and Enforcement of Data Structure Consistency
+                  Specifications},
+  booktitle = {Proceedings of the ACM SIGSOFT International Symposium
+                  on Software Testing and Analaysis},
+  series = {ISSTA 2006},
+  year = 2006,
+  month = {July},
+}
+
 
 @inproceedings{Kaiser09,
   author = {Kaiser, Edward and Feng, Wu-chang and Schluessler, Travis},
@@ -11955,6 +12054,18 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
  keywords = {Daikon, Dynamic analysis, Dynamic invariant detection, Inductive logic programming, Inference, Invariant, Likely invariant, Program understanding, Specification, Specification mining},
 }
 
+@inproceedings{Ruwase08,
+  author =	 {Olatunji Ruwase and Phillip B. Gibbons and Todd
+                  C. Mowry and Vijaya Ramachandran and Shimin Chen and
+                  Michael Kozuch and Michael Ryan},
+  title =	 {Parallelizing Dynamic Information Flow Tracking},
+  booktitle =    {Symposium on Parallelism in Algorithms and
+                  Architectures (SPAA)},
+  month =        {June},
+  year =	 {2008},
+}
+
+
 @techreport{Tip94,
  author = {Tip, Frank},
  title = {A Survey of Program Slicing Techniques.},
@@ -12028,7 +12139,21 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {Dynamic analysis, malware},
-} 
+}
+
+@inproceedings{Chen08,
+ author = {Shimin Chen and Michael Kozuch and Theodoros Strigkos and
+                  Babak Falsafi and Phillip B. Gibbons and Todd
+                  C. Mowry and Vijaya Ramachandran and Olatunji Ruwase
+                  and Mchiael Ryan and Evangelos Vlachos},
+ title = {Flexible Hardware Acceleration for Instruction-Grain Program
+                  Monitoring},
+ month = {June},
+ year = {2008},
+ address = {Beijing, China},
+ booktitle = {Proceedings of the 35th International Symposium on
+                  Computer Architecture (ISCA)},
+}
 
 @inproceedings{Marino15,
   author =  {Daniel Marino and Todd Millstein and Madanlal Musuvathi and Satish Narayanasamy and Abhayendra Singh},
@@ -12049,22 +12174,6 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
   annote =  {Keywords: memory consistency models; sequential consistency; safe  programming languages; data races}
 }
 
-@inproceedings{Balzer69,
- author = {Balzer, R. M.},
- title = {EXDAMS: Extendable Debugging and Monitoring System},
- booktitle = {Proceedings of the May 14-16, 1969, Spring Joint Computer Conference},
- series = {AFIPS '69 (Spring)},
- year = {1969},
- location = {Boston, Massachusetts},
- pages = {567--580},
- numpages = {14},
- url = {http://doi.acm.org/10.1145/1476793.1476881},
- doi = {10.1145/1476793.1476881},
- acmid = {1476881},
- publisher = {ACM},
- address = {New York, NY, USA},
-} 
-
 @inproceedings{Cowan98,
  author = {Cowan, Crispin and Pu, Calton and Maier, Dave and Hintony, Heather and Walpole, Jonathan and Bakke, Peat and Beattie, Steve and Grier, Aaron and Wagle, Perry and Zhang, Qian},
  title = {StackGuard: Automatic Adaptive Detection and Prevention of Buffer-overflow Attacks},
@@ -12080,6 +12189,23 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
  address = {Berkeley, CA, USA},
 }
 
+@article{Bruneton02,
+  title={ASM: a code manipulation tool to implement adaptable systems},
+  author={Bruneton, Eric and Lenglet, Romain and Coupaye, Thierry},
+  journal={Adaptable and extensible component systems},
+  volume={30},
+  number={19},
+  year={2002}
+}
+
+@book{McConnell04,
+  title={Code complete},
+  author={McConnell, Steve},
+  year={2004},
+  publisher={Pearson Education}
+}
+
+
 @MISC{fortune-fb,
   author =       {Mangalindan, JP},
   title =        {Facebook users dial 911 over social network outage},
@@ -12089,16 +12215,6 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
   howpublished = {\url{http://fortune.com/2014/08/01/facebook-users-dial-911-over-social-network-outage/}},
   url = {http://fortune.com/2014/08/01/facebook-users-dial-911-over-social-network-outage/},
   note = {[Online; posted 1-August-2014]},
-}
-
-@inproceedings{Sengupta15,
-  title={Hybrid Static--Dynamic Analysis for Statically Bounded Region Serializability},
-  author={Sengupta, Aritra and Biswas, Swarnendu and Zhang, Minjia and Bond, Michael D and Kulkarni, Milind},
-  booktitle={ACM SIGPLAN Notices},
-  volume={50},
-  pages={561--575},
-  year={2015},
-  organization={ACM}
 }
 
 @article{Adve10,
@@ -12118,34 +12234,162 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
  acmid = {1787255},
  publisher = {ACM},
  address = {New York, NY, USA},
-} 
+}
 
 @inproceedings{Boehm14,
- author = {Boehm, Hans-J. and Demsky, Brian},
- title = {Outlawing Ghosts: Avoiding Out-of-thin-air Results},
- booktitle = {Proceedings of the Workshop on Memory Systems Performance and Correctness},
- series = {MSPC '14},
- year = {2014},
- isbn = {978-1-4503-2917-0},
- location = {Edinburgh, United Kingdom},
- pages = {7:1--7:6},
- articleno = {7},
- numpages = {6},
- url = {http://doi.acm.org/10.1145/2618128.2618134},
- doi = {10.1145/2618128.2618134},
- acmid = {2618134},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {C++, Java, atomic operations, relaxed memory models},
-} 
+  author = {Boehm, Hans-J. and Demsky, Brian},
+  title = {Outlawing Ghosts: Avoiding Out-of-thin-air Results},
+  booktitle = {Proceedings of the Workshop on Memory Systems Performance and Correctness},
+  series = {MSPC '14},
+  year = {2014},
+  isbn = {978-1-4503-2917-0},
+  location = {Edinburgh, United Kingdom},
+  pages = {7:1--7:6},
+  articleno = {7},
+  numpages = {6},
+  url = {http://doi.acm.org/10.1145/2618128.2618134},
+  doi = {10.1145/2618128.2618134},
+  acmid = {2618134},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {C++, Java, atomic operations, relaxed memory models},
+}
 
-@article{Bruneton02,
-  title={ASM: a code manipulation tool to implement adaptable systems},
-  author={Bruneton, Eric and Lenglet, Romain and Coupaye, Thierry},
-  journal={Adaptable and extensible component systems},
-  volume={30},
-  number={19},
-  year={2002}
+
+@article{Ricci14,
+ author  = "Robert Ricci and Eric Eide and {The CloudLab Team}",
+ title   = "Introducing {CloudLab}: Scientific Infrastructure for
+                  Advancing Cloud Architectures and Applications",
+ journal = "{USENIX} {;login:}",
+ year    = 2014,
+ month   = dec,
+ volume  = 39,
+ number  = 6,
+ url = "https://www.usenix.org/publications/login/dec14/ricci"
+}
+
+@inproceedings{Foo10,
+  title={A case for custom silicon in enabling low-cost information
+                  technology for developing regions},
+  author={Foo, ZhiYoong and Devescery, David and Ghaed, Mohammad
+                  Hassan and Lee, Inhee and Madhavan, Abishek and
+                  Park, Youn Sung and Rao, Aswin S and Renner, Zach
+                  and Roberts, Nathan E and Schulman, Aaron D and
+                  Vinay, Vikas and Wieckowski, Michael and Yoon,
+                  Dongmin and Blaauw, David and Chen, Peter M. and
+                  Dutta, Prabal and Schmidt, Cliff},
+  booktitle={Proceedings of the First ACM Symposium on Computing for
+                  Development},
+  pages={22},
+  year={2010},
+  organization={ACM}
+}
+
+@inproceedings{Cooper10,
+  title=         {Benchmarking cloud serving systems with YCSB},
+  author=        {Cooper, Brian F and Silberstein, Adam and Tam, Erwin
+                  and Ramakrishnan, Raghu and Sears, Russell},
+  booktitle=     {Proceedings of the 1st ACM symposium on Cloud
+                  computing},
+  year=          {2010},
+  pages=         {143--154}
+}
+
+@inproceedings{Tallent10,
+  author = {Tallent, Nathan R. and Mellor-Crummey, John M. and
+                  Porterfield, Allan},
+  title = {Analyzing Lock Contention in Multithreaded Applications},
+  booktitle = {Proceedings of the 15th ACM SIGPLAN Symposium on
+                  Principles and Practice of Parallel Programming},
+  series = {PPoPP '10},
+  year = {2010},
+  location = {Bangalore, India},
+  pages = {269--280},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+}
+
+
+@article{Foo13,
+  title={A low-cost audio computer for information dissemination among
+                  illiterate people groups},
+  author={Foo, ZhiYoong and Devescery, David and Ghaed, Mohammad
+                  Hassan and Lee, Inhee and Madhavan, Abishek and
+                  Park, Youn Sung and Rao, Aswin S and Renner, Zach
+                  and Roberts, Nathan E and Schulman, Aaron D and
+                  Vinay, Vikas and Wieckowski, Michael and Yoon,
+                  Dongmin and Blaauw, David and Chen, Peter M. and
+                  Dutta, Prabal and Schmidt, Cliff},
+  journal={IEEE Transactions on Circuits and Systems I: Regular
+                  Papers},
+  volume={60},
+  number={8},
+  pages={2039--2050},
+  year={2013},
+  publisher={IEEE}
+}
+
+@inproceedings{Viennot13,
+  author =	 {Nicolas Viennot and Siddharth Nair and Jason Nieh},
+  title =	 {Transparent Mutable Replay for Multicore Debugging
+                  and Patch Validation},
+  booktitle =	 ASPLOS13,
+  location =     {Houston, TX},
+  month =	 {March},
+  year =	 {2013},
+}
+
+@inproceedings{Honarmand14,
+  author={N. Honarmand and J. Torrellas},
+  booktitle={2014 ACM/IEEE 41st International Symposium on Computer
+                  Architecture (ISCA)},
+  title={Replay debugging: Leveraging record and replay for program
+                  debugging},
+  year={2014},
+  pages={455-456},
+  month={June}
+}
+
+
+@inproceedings{Laurenzano14,
+  title =        {Protean code: Achieving near-free online code
+                  transformations for warehouse scale computers},
+  author =       {Laurenzano, Michael A and Zhang, Yunqi and Tang,
+                  Lingjia and Mars, Jason},
+  booktitle =    {Proceedings of the 47th Annual IEEE/ACM
+                  International Symposium on Microarchitecture},
+  year =         {2014},
+  pages =        {558--570}
+}
+
+@inproceedings{Mace15,
+  author = {Mace, Jonathan and Roelke, Ryan and Fonseca, Rodrigo},
+  title = {Pivot Tracing: Dynamic Causal Monitoring for Distributed
+		  Systems},
+  booktitle = SOSP15,
+  year = {2015},
+  location = {Monterey, California},
+}
+
+@inproceedings{Ming15,
+  author = {Jiang Ming and Dinghao Wu and Gaoyao Xiao and Jun Wang and Peng Liu},
+  title = {{TaintPipe}: Pipelined Symbolic Taint Analysis},
+  booktitle = {Proceedings of the 24th Usenix Security Symposium},
+  month = {August},
+  year = {2015},
+  address = {Washington, D.C.},
+}
+
+@inproceedings{Sengupta15,
+  title={Hybrid Static--Dynamic Analysis for Statically Bounded Region
+                  Serializability},
+  author={Sengupta, Aritra and Biswas, Swarnendu and Zhang, Minjia and
+                  Bond, Michael D and Kulkarni, Milind},
+  booktitle={ACM SIGPLAN Notices},
+  volume={50},
+  pages={561--575},
+  year={2015},
+  organization={ACM}
 }
 
 @phdthesis{Chow16-thesis,
@@ -12153,44 +12397,6 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
   author={Chow, Michael},
   year={2016}
 }
-
-@article{Pan88,
-	author = {Pan, Douglas Z. and Linton, Mark A.},
-	title = {Supporting Reverse Execution for Parallel Programs},
-	journal = {SIGPLAN Not.},
-	issue_date = {Jan. 1989},
-	volume = {24},
-	number = {1},
-	month = nov,
-	year = {1988},
-	issn = {0362-1340},
-	pages = {124--129},
-	numpages = {6},
-	url = {http://doi.acm.org/10.1145/69215.69227},
-	doi = {10.1145/69215.69227},
-	acmid = {69227},
-	publisher = {ACM},
-	address = {New York, NY, USA},
-}
-
-@article{Chambers89,
- author = {Chambers, C. and Ungar, D.},
- title = {Customization: Optimizing Compiler Technology for SELF, a Dynamically-typed Object-oriented Programming Language},
- journal = {SIGPLAN Not.},
- issue_date = {July 1989},
- volume = {24},
- number = {7},
- month = jun,
- year = {1989},
- issn = {0362-1340},
- pages = {146--160},
- numpages = {15},
- url = {http://doi.acm.org/10.1145/74818.74831},
- doi = {10.1145/74818.74831},
- acmid = {74831},
- publisher = {ACM},
- address = {New York, NY, USA},
-} 
 
 @inproceedings{Quinn16,
   title={JetStream: Cluster-Scale Parallelization of Information Flow
@@ -12201,6 +12407,17 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
   pages={451--466},
   year={2016}
 }
+
+@inproceedings{O'Callahan17,
+  author = {Robert O'Callahan and Chris Jones and Nathan Froyd and
+                  Kyle Huey and Albert Noll and Nimrod Partush},
+  booktitle = USENIX17,
+  address = {Santa Clara, CA},
+  title = {Engineering Record and Replay for Deployability},
+  month = {July},
+  year = {2017}
+}
+
 
 @inproceedings{Devecsery18,
   title={Optimistic Hybrid Analysis: Accelerating Dynamic Analysis through
@@ -12223,34 +12440,24 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
   organization={IEEE}
 }
 
-@article{Foo13,
-  title={A low-cost audio computer for information dissemination among
-    illiterate people groups},
-  author={Foo, ZhiYoong and Devescery, David and Ghaed, Mohammad Hassan and
-    Lee, Inhee and Madhavan, Abishek and Park, Youn Sung and Rao, Aswin S
-      and Renner, Zach and Roberts, Nathan E and Schulman, Aaron D and
-      Vinay, Vikas and Wieckowski, Michael and Yoon, Dongmin and Blaauw, David
-      and Chen, Peter M. and Dutta, Prabal and Schmidt, Cliff},
-  journal={IEEE Transactions on Circuits and Systems I: Regular Papers},
-  volume={60},
-  number={8},
-  pages={2039--2050},
-  year={2013},
-  publisher={IEEE}
+
+@misc{MemtierBenchmark,
+  key={memtier\_benchmark},
+  title= {memtier\_benchmark: A High-Throughput Benchmarking Tool for
+                  Redis \& Memcached},
+  note = {\url{https://redislabs.com/blog/memtier_benchmark-a-high-throughput-benchmarking-tool-for-redis-memcached/}},
+  month = {June},
+  year={2013}
 }
 
-@inproceedings{Foo10,
-  title={A case for custom silicon in enabling low-cost information technology
-    for developing regions},
-  author={Foo, ZhiYoong and Devescery, David and Ghaed, Mohammad Hassan and
-    Lee, Inhee and Madhavan, Abishek and Park, Youn Sung and Rao, Aswin S
-      and Renner, Zach and Roberts, Nathan E and Schulman, Aaron D and
-      Vinay, Vikas and Wieckowski, Michael and Yoon, Dongmin and Blaauw, David
-      and Chen, Peter M. and Dutta, Prabal and Schmidt, Cliff},
-  booktitle={Proceedings of the First ACM Symposium on Computing for
-    Development},
-  pages={22},
-  year={2010},
-  organization={ACM}
+@misc{Apache45605,
+  key={Bug 45605},
+  title= {Bug 45605 },
+  note = {\url{https://bz.apache.org/bugzilla/show\_bug.cgi?id=45605}}
 }
 
+@misc{Apache25520,
+  key={Bug 25520},
+  title= {Bug 25520},
+  note = {\url{https://bz.apache.org/bugzilla/show\_bug.cgi?id=25520}}
+}
