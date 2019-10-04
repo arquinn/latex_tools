@@ -3,30 +3,33 @@
 
 @STRING{PROC = "Proceedings of the "}
 @STRING{SOSP = " ACM Symposium on Operating Systems Principles"}
-@STRING{SOSP13 = PROC # "24th" # SOSP}
-@STRING{SOSP11 = PROC # "23rd" # SOSP}
-@STRING{SOSP09 = PROC # "22nd" # SOSP}
-@STRING{SOSP07 = PROC # "21st" # SOSP}
-@STRING{SOSP05 = PROC # "20th" # SOSP}
-@STRING{SOSP03 = PROC # "19th" # SOSP}
-@STRING{SOSP01 = PROC # "18th" # SOSP}
-@STRING{SOSP99 = PROC # "17th" # SOSP}
-@STRING{SOSP97 = PROC # "16th" # SOSP}
-@STRING{SOSP95 = PROC # "15th" # SOSP}
-@STRING{SOSP93 = PROC # "14th" # SOSP}
-@STRING{SOSP91 = PROC # "13th" # SOSP}
-@STRING{SOSP89 = PROC # "12th" # SOSP}
-@STRING{SOSP87 = PROC # "11th" # SOSP}
-@STRING{SOSP85 = PROC # "10th" # SOSP}
-@STRING{SOSP83 = PROC # "9th"  # SOSP}
-@STRING{SOSP81 = PROC # "8th"  # SOSP}
-@STRING{SOSP79 = PROC # "7th"  # SOSP}
-@STRING{SOSP77 = PROC # "6th"  # SOSP}
-@STRING{SOSP75 = PROC # "5th"  # SOSP}
-@STRING{SOSP73 = PROC # "4th"  # SOSP}
-@STRING{SOSP71 = PROC # "3rd"  # SOSP}
-@STRING{SOSP69 = PROC # "2nd"  # SOSP}
+
 @STRING{SOSP67 = PROC # "1st"  # SOSP}
+@STRING{SOSP69 = PROC # "2nd"  # SOSP}
+@STRING{SOSP71 = PROC # "3rd"  # SOSP}
+@STRING{SOSP73 = PROC # "4th"  # SOSP}
+@STRING{SOSP75 = PROC # "5th"  # SOSP}
+@STRING{SOSP77 = PROC # "6th"  # SOSP}
+@STRING{SOSP79 = PROC # "7th"  # SOSP}
+@STRING{SOSP81 = PROC # "8th"  # SOSP}
+@STRING{SOSP83 = PROC # "9th"  # SOSP}
+@STRING{SOSP85 = PROC # "10th" # SOSP}
+@STRING{SOSP87 = PROC # "11th" # SOSP}
+@STRING{SOSP89 = PROC # "12th" # SOSP}
+@STRING{SOSP91 = PROC # "13th" # SOSP}
+@STRING{SOSP93 = PROC # "14th" # SOSP}
+@STRING{SOSP95 = PROC # "15th" # SOSP}
+@STRING{SOSP97 = PROC # "16th" # SOSP}
+@STRING{SOSP99 = PROC # "17th" # SOSP}
+@STRING{SOSP01 = PROC # "18th" # SOSP}
+@STRING{SOSP03 = PROC # "19th" # SOSP}
+@STRING{SOSP05 = PROC # "20th" # SOSP}
+@STRING{SOSP07 = PROC # "21st" # SOSP}
+@STRING{SOSP09 = PROC # "22nd" # SOSP}
+@STRING{SOSP11 = PROC # "23rd" # SOSP}
+@STRING{SOSP13 = PROC # "24th" # SOSP}
+@STRING{SOSP15 = PROC # "24th" # SOSP}
+@STRING{SOSP17 = PROC # "24th" # SOSP}
 
 @STRING{SOSPWIP = " ACM Symposium on Operating Systems Principles: Work in Progress Session"}
 
@@ -76,6 +79,14 @@
 @STRING{MOBICOM08 = PROC # "14th" # MOBICOM}
 @STRING{MOBICOM09 = PROC # "15th" # MOBICOM}
 @STRING{MOBICOM10 = PROC # "16th" # MOBICOM}
+@STRING{MOBICOM11 = PROC # "17th" # MOBICOM}
+@STRING{MOBICOM12 = PROC # "18th" # MOBICOM}
+@STRING{MOBICOM13 = PROC # "19th" # MOBICOM}
+@STRING{MOBICOM14 = PROC # "20th" # MOBICOM}
+@STRING{MOBICOM15 = PROC # "21th" # MOBICOM}
+@STRING{MOBICOM16 = PROC # "22th" # MOBICOM}
+@STRING{MOBICOM17 = PROC # "23th" # MOBICOM}
+@STRING{MOBICOM18 = PROC # "24th" # MOBICOM}
 
 @STRING{MOBISYS = " International Conference on Mobile Systems, Applications and Services"}
 @STRING{MOBISYS03 = PROC # "1st" # MOBISYS}
@@ -124,6 +135,10 @@
 @STRING{ASPLOS11 = PROC # "16th" # ASPLOS}
 @STRING{ASPLOS12 = PROC # "17th" # ASPLOS}
 @STRING{ASPLOS13 = PROC # "18th" # ASPLOS}
+@STRING{ASPLOS14 = PROC # "19th" # ASPLOS}
+@STRING{ASPLOS15 = PROC # "20th" # ASPLOS}
+@STRING{ASPLOS16 = PROC # "21th" # ASPLOS}
+@STRING{ASPLOS17 = PROC # "22th" # ASPLOS}
 
 @STRING{PLDI = " Conference on Programming Language Design and Implementation"}
 @STRING{PLDI89 = PROC # "ACM SIGPLAN 1989" # PLDI}
@@ -334,6 +349,14 @@
   address = {New York, NY, USA},
 }
 
+
+@inproceedings{Powell83,
+  author = {Powell, Michael L. and Miller, Barton P.},
+  title = {Process Migration in DEMOS/MP},
+  booktitle = SOSP83, 
+  year = {1983},
+}
+
 @article{Pan88,
   author = {Pan, Douglas Z. and Linton, Mark A.},
   title = {Supporting Reverse Execution for Parallel Programs},
@@ -383,6 +406,26 @@
   month = {October},
 }
 
+@article{Douglis91,
+ author = {Douglis, Fred and Ousterhout, John},
+ title = {Transparent Process Migration: Design Alternatives and the
+                  Sprite Implementation},
+ journal = {Softw. Pract. Exper.},
+ issue_date = {Aug. 1991},
+ volume = {21},
+ number = {8},
+ month = jul,
+ year = {1991},
+ issn = {0038-0644},
+ pages = {757--785},
+ numpages = {29},
+ url = {http://dx.doi.org/10.1002/spe.4380210802},
+ doi = {10.1002/spe.4380210802},
+ acmid = {116729},
+ publisher = {John Wiley \& Sons, Inc.},
+}
+
+
 @inproceedings{Brustoloni96,
   author =	 {Jos\&\#233; Carlos Brustoloni and Peter Steenkiste},
   title =	 {Effects of buffering semantics on {I/O} performance},
@@ -392,6 +435,22 @@
   address =	 {Seattle, WA},
 }
 
+@inproceedings{Castro99,
+  author = {Castro, Miguel and Liskov, Barbara},
+  title = {Practical Byzantine Fault Tolerance},
+  booktitle = {Proceedings of the Third Symposium on Operating Systems
+                  Design and Implementation},
+  series = {OSDI '99},
+  year = {1999},
+  isbn = {1-880446-39-1},
+  location = {New Orleans, Louisiana, USA},
+  pages = {173--186},
+  numpages = {14},
+  url = {http://dl.acm.org/citation.cfm?id=296806.296824},
+  acmid = {296824},
+  publisher = {USENIX Association},
+  address = {Berkeley, CA, USA},
+}
 
 @article{Itzkovitz99,
   author = {Ayal Itzkovitz and Assaf Schuster and Oren {Zeev-Ben-Mordehai}},
@@ -403,6 +462,8 @@
   number = {2},
   month = {November},
 }
+
+
 
 @InProceedings{Song04,
  author = {L. Song and D. Kotz and R. Jain and X. He},
@@ -481,6 +542,30 @@ note = {http://developer.android.com/guide/components/processes-and-threads.html
   title =	 {{TransmitFile}},
   note =         {\url{http://msdn2.microsoft.com/en-us/library/ms740565.aspx}},
 }
+
+@inproceedings{Ellis04,
+  author={Ellis, Stephen R and Mania, Katerina and Adelstein, Bernard
+                  D and Hill, Michael I},
+  title={Generalizeability of latency detection in a variety of
+                  virtual environments},
+  booktitle={Proceedings of the Human Factors and Ergonomics Society
+                  Annual Meeting},
+  pages={2632--2636},
+  year={2004},
+}
+
+
+@inproceedings{Clark05,
+  title={Live migration of virtual machines},
+  author={Clark, Christopher and Fraser, Keir and Hand, Steven and
+                  Hansen, Jacob Gorm and Jul, Eric and Limpach,
+                  Christian and Pratt, Ian and Warfield, Andrew},
+  booktitle = NSDI05,
+  pages={273--286},
+  year={2005},
+  organization={USENIX Association}
+}
+
 
 @inproceedings{Lopresti05,
   author =	 {Daniel P. Lopresti and Spitz A. Lawrence},
@@ -612,8 +697,11 @@ note = {http://developer.android.com/guide/components/processes-and-threads.html
 }
 
 @inproceedings{Bent04,
-  author =	 {John Bent and Douglas Thain and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau and Miron Livny},
-  title =	 {Explicit Control in a Batch-Aware Distributed File System},
+  author =	 {John Bent and Douglas Thain and Andrea
+                  C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau and
+                  Miron Livny},
+  title =	 {Explicit Control in a Batch-Aware Distributed File
+                  System},
   booktitle =	 NSDI04,
   year =	 {2004},
   month =        {March},
@@ -622,7 +710,8 @@ note = {http://developer.android.com/guide/components/processes-and-threads.html
 
 @article{Murphy95,
   author =	 {Brendan Murphy and Ted Gent},
-  title =	 {Measuring System and Software Reliability using an Automated Data Collection Process}, 
+  title =	 {Measuring System and Software Reliability using an
+                  Automated Data Collection Process},
   journal =	 {Quality and Reliability Engineering International},
   year =	 {1995},
   volume = 11,
@@ -1261,6 +1350,22 @@ location = {Toronto, Canada},
   pages =	 {65--71},
   year =	 {1997},
   month =	 {May}
+}
+
+@techreport{Litzkow97,
+  author = {Litzkow, Michael and Tannenbaum, Todd and Basney, Jim and
+                  Livny, Miron},
+  citeulike-article-id = {1534361},
+  institution = {University of Wisconsin, Madison},
+  keywords = {ckpt},
+  month = apr,
+  number = {CS-TR-1997-1346},
+  posted-at = {2007-08-04 09:34:13},
+  priority = {3},
+  title = {Checkpoint and {M}igration of {UNIX} {P}rocesses in the
+                  {C}ondor {D}istributed {P}rocessing {S}ystem},
+  type = {Technical Report},
+  year = {1997}
 }
 
 @inproceedings{Lie03,
@@ -3128,6 +3233,18 @@ year    =    {2000},
 pages   =    {30-41}		  
 }
 
+@article{opencv_library,
+  author = {Bradski, G.},
+  citeulike-article-id = {2236121},
+  journal = {Dr. Dobb's Journal of Software Tools},
+  keywords = {bibtex-import},
+  posted-at = {2008-01-15 19:21:54},
+  priority = {4},
+  title = {{The OpenCV Library}},
+  year = {2000}
+}
+
+
 @inproceedings{Narayanan02,
 key     =    {Narayanan02},
 title   =    {Predictive Resource Management for Wearable Computing},
@@ -3210,7 +3327,8 @@ pages   =    {245--257}
 
 @inproceedings{Litzkow92,
         author = {Michael Litzkow and Marvin Solomon},
-        title = {Supporting Checkpointing and Process Migration Outside the UNIX Kernel},
+        title = {Supporting Checkpointing and Process Migration
+                  Outside the UNIX Kernel},
         booktitle = USENIXW92,
         month = {January},
         place = {San Francisco, CA},
@@ -7975,21 +8093,24 @@ pages     = {73-84}
     pages = "301-312",
 }
 
-@inProceedings{Olszewski09,
-    author = "Marek Olszewski and Jason Ansel and Saman Amarasinghe ",
-    title = "{Kendo: efficient deterministic multithreading in software}",
-    booktitle = ASPLOS09,
-    year = {2009},
-    month = {March},
-    pages = {97--108}
+@inproceedings{Bienia08,
+  author = {Christian Bienia and Sanjeev Kumar and Jaswinder Pal Singh
+                  and Kai Li},
+  title = {The {PARSEC} Benchmark Suite: Characterization and
+                  Architectural Implications},
+  booktitle = {Proceedings of the 17th International Conference on
+                  Parallel Architectures and Compilation Techniques},
+  year      = {2008},
+  month     = {October}
 }
 
-@inproceedings{Bienia08,
-    author = {Christian Bienia and Sanjeev Kumar and Jaswinder Pal Singh and Kai Li},
-    title = {The {PARSEC} Benchmark Suite: Characterization and Architectural Implications},
-    booktitle = {Proceedings of the 17th International Conference on Parallel Architectures and Compilation Techniques},
-    year      = {2008},
-    month     = {October}
+@inProceedings{Olszewski09,
+  author = {Marek Olszewski and Jason Ansel and Saman Amarasinghe},
+  title = {Kendo: efficient deterministic multithreading in software},
+  booktitle = ASPLOS09,
+  year = {2009},
+  month = {March},
+  pages = {97--108}
 }
 
 @inproceedings{Woo95,
@@ -9927,14 +10048,14 @@ year = 2002
   pages = {337--351},
 } 
 
-@inproceedings{Liu11dthread,
+@inproceedings{Liu11_dthreads,
   author = {Liu, Tongping and Curtsinger, Charlie and Berger, Emery D.},
   title = {Dthreads: efficient deterministic multithreading},
   booktitle = SOSP11,
   year = {2011},
   location = {Cascais, Portugal},
   pages = {327--336},
-} 
+}
 
 @inproceedings{Oliveira10,
   author = {Fabio Oliveria and Andew Tjang and Ricardo Bianchini and Richard P. Martin and Thu D. Nguyen},
@@ -11832,6 +11953,24 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
  keywords = {dynamic analysis, execution traces, formal specification, logical inference, pattern recognition, program invariants, software evolution},
 }
 
+@inproceedings{Kapritsos12,
+ author = {Kapritsos, Manos and Wang, Yang and Quema, Vivien and
+                  Clement, Allen and Alvisi, Lorenzo and Dahlin, Mike},
+ title = {All About Eve: Execute-verify Replication for Multi-core
+                  Servers},
+ booktitle = OSDI12,
+ series = {OSDI'12},
+ year = {2012},
+ isbn = {978-1-931971-96-6},
+ location = {Hollywood, CA, USA},
+ pages = {237--250},
+ numpages = {14},
+ url = {http://dl.acm.org/citation.cfm?id=2387880.2387903},
+ acmid = {2387903},
+ publisher = {USENIX Association},
+}
+
+
 @inproceedings{Kinder12,
  author = {Kinder, Johannes and Kravchenko, Dmitry},
  title = {Alternating Control Flow Reconstruction},
@@ -12268,6 +12407,16 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
  url = "https://www.usenix.org/publications/login/dec14/ricci"
 }
 
+@inproceedings{Cooper10,
+  title=         {Benchmarking cloud serving systems with YCSB},
+  author=        {Cooper, Brian F and Silberstein, Adam and Tam, Erwin
+                  and Ramakrishnan, Raghu and Sears, Russell},
+  booktitle=     {Proceedings of the 1st ACM symposium on Cloud
+                  computing},
+  year=          {2010},
+  pages=         {143--154}
+}
+
 @inproceedings{Foo10,
   title={A case for custom silicon in enabling low-cost information
                   technology for developing regions},
@@ -12285,15 +12434,6 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
   organization={ACM}
 }
 
-@inproceedings{Cooper10,
-  title=         {Benchmarking cloud serving systems with YCSB},
-  author=        {Cooper, Brian F and Silberstein, Adam and Tam, Erwin
-                  and Ramakrishnan, Raghu and Sears, Russell},
-  booktitle=     {Proceedings of the 1st ACM symposium on Cloud
-                  computing},
-  year=          {2010},
-  pages=         {143--154}
-}
 
 @inproceedings{Tallent10,
   author = {Tallent, Nathan R. and Mellor-Crummey, John M. and
@@ -12392,6 +12532,14 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
   organization={ACM}
 }
 
+@inproceedings{Yi15,
+  title={Security and Privacy Issues of Fog Computing: A Survey},
+  author={Shanhe Yi and Zhengrui Qin and Qun Li},
+  booktitle={WASA},
+  year={2015}
+}
+
+
 @phdthesis{Chow16-thesis,
   title={Scaling Causality Analysis for Production Systems.},
   author={Chow, Michael},
@@ -12406,6 +12554,76 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
   booktitle={OSDI},
   pages={451--466},
   year={2016}
+}
+
+@article{Teka16,
+ author = {Teka, Fikirte and Lung, Chung-Horng and Ajila, Samuel A.},
+ title = {Nearby Live Virtual Machine Migration Using Cloudlets and Multipath TCP},
+ journal = {J. Cloud Comput.},
+ issue_date = {December  2016},
+ volume = {5},
+ number = {1},
+ month = dec,
+ year = {2016},
+ issn = {2192-113X},
+ pages = {61:1--61:21},
+ articleno = {61},
+ numpages = {21},
+ url = {https://doi.org/10.1186/s13677-016-0061-0},
+ doi = {10.1186/s13677-016-0061-0},
+ acmid = {2996060},
+ publisher = {Hindawi Publishing Corp.},
+}
+
+
+@inproceedings{Chaufournier17,
+ author = {Chaufournier, Lucas and Sharma, Prateek and Le, Franck and
+                  Nahum, Erich and Shenoy, Prashant and Towsley, Don},
+ title = {Fast Transparent Virtual Machine Migration in Distributed
+                  Edge Clouds},
+ booktitle = {Proceedings of the Second ACM/IEEE Symposium on Edge
+                  Computing},
+ series = {SEC '17},
+ year = {2017},
+ isbn = {978-1-4503-5087-7},
+ location = {San Jose, California},
+ pages = {10:1--10:13},
+ articleno = {10},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/3132211.3134445},
+ doi = {10.1145/3132211.3134445},
+ acmid = {3134445},
+ publisher = {ACM},
+}
+
+
+@inproceedings{Ha17,
+  author={Ha, Kiryong and Abe, Yoshihisa and Eiszler, Thomas and Chen,
+                  Zhuo and Hu, Wenlu and Amos, Brandon and Upadhyaya,
+                  Rohit and Pillai, Padmanabhan and Satyanarayanan,
+                  Mahadev},
+  title={You Can Teach Elephants to Dance: Agile VM Handoff for Edge
+                  Computing},
+  booktitle={Proceedings of the Second ACM/IEEE Symposium on Edge
+                  Computing (SEC)},
+  year={2017},
+}
+
+@inproceedings{Ma17,
+  author={Ma, Lele and Yi, Shanhe and Li, Qun},
+  title={Efficient service handoff across edge servers via docker
+                  container migration},
+  booktitle={Proceedings of the Second ACM/IEEE Symposium on Edge
+                  Computing (SEC)},
+  year={2017}
+}
+
+@inproceedings{Mashtizadeh17,
+  author = {Mashtizadeh, Ali Jos{\'e} and Garfinkel, Tal and Terei,
+                  David and Mazieres, David and Rosenblum, Mendel},
+  title = {Towards Practical Default-On Multi-Core Record/Replay},
+  booktitle = ASPLOS17,
+  year = {2017},
 }
 
 @inproceedings{O'Callahan17,
@@ -12446,22 +12664,74 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
   organization={ACM}
 }
 
+@misc{Hellerstein18,
+    title={Serverless Computing: One Step Forward, Two Steps Back},
+    author={Joseph M. Hellerstein and Jose Faleiro and Joseph
+                  E. Gonzalez and Johann Schleier-Smith and Vikram
+                  Sreekanti and Alexey Tumanov and Chenggang Wu},
+    year={2018},
+    eprint={1812.03651},
+    archivePrefix={arXiv},
+    primaryClass={cs.DC}
+}
+
+@article{Hong18,
+  author    = {Cheol{-}Ho Hong and
+               Blesson Varghese},
+  title     = {Resource Management in Fog/Edge Computing: {A} Survey},
+  journal   = {CoRR},
+  volume    = {abs/1810.00305},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1810.00305},
+  archivePrefix = {arXiv},
+  eprint    = {1810.00305},
+  timestamp = {Tue, 30 Oct 2018 10:49:09 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1810-00305},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Lee18,
+ author = {Lee, HyunJong and Flinn, Jason and Tonshal, Basavaraj},
+ title = {RAVEN: Improving Interactive Latency for the Connected Car},
+ booktitle = MOBICOM18,
+ series = {MobiCom '18},
+ year = {2018},
+ isbn = {978-1-4503-5903-0},
+ location = {New Delhi, India},
+ pages = {557--572},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/3241539.3241571},
+ doi = {10.1145/3241539.3241571},
+ acmid = {3241571},
+ publisher = {ACM},
+}
+
+@article{Machen18,
+  author = {Machen, Andrew and Wang, Shiqiang and Leung, Kin K. and
+                  Ko, Bong Jun and Salonidis, Theodoros},
+  title = {Live Service Migration in Mobile Edge Clouds},
+  journal = {Wireless Commun.},
+  issue_date = {February 2018},
+  volume = {25},
+  number = {1},
+  month = feb,
+  year = {2018},
+  issn = {1536-1284},
+  pages = {140--147},
+  numpages = {8},
+  url = {https://doi.org/10.1109/MWC.2017.1700011},
+  doi = {10.1109/MWC.2017.1700011},
+  acmid = {3195745},
+  publisher = {IEEE Press},
+  address = {Piscataway, NJ, USA},
+}
+
 @inproceedings{Banerjee19,
   title={Iodine: Fast Dynamic Taint Tracking Using Rollback-free Optimistic Hybrid Analysis},
   author={Banerjee, Subarno and Devecsery, David and Chen, Peter M and Narayanasamy, Satish},
   booktitle={Iodine: Fast Dynamic Taint Tracking Using Rollback-free Optimistic Hybrid Analysis},
   pages={0},
   organization={IEEE}
-}
-
-
-@misc{MemtierBenchmark,
-  key={memtier\_benchmark},
-  title= {memtier\_benchmark: A High-Throughput Benchmarking Tool for
-                  Redis \& Memcached},
-  note = {\url{https://redislabs.com/blog/memtier_benchmark-a-high-throughput-benchmarking-tool-for-redis-memcached/}},
-  month = {June},
-  year={2013}
 }
 
 @misc{Apache45605,
@@ -12475,3 +12745,41 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
   title= {Bug 25520},
   note = {\url{https://bz.apache.org/bugzilla/show\_bug.cgi?id=25520}}
 }
+
+@online{aws_greengrass,
+  year = {2018},
+  title ={ AWS IoT Greengrass: Bring local compute, messaging, data
+                  caching, sync, and ML inference capabilities to edge
+                  devices },
+  url ={https://aws.amazon.com/greengrass/},
+  lastaccessed ={April 28, 2019},
+}
+
+@online{azure_iot,
+  year = {2018},
+  title ={Azure IoT Edge: Extend cloud intelligence and analytics to
+                  edge devices},
+  url ={https://azure.microsoft.com/en-us/services/iot-edge/},
+  lastaccessed ={April 28, 2019},
+}
+
+
+@online{itu14,
+  author = {ITU-Report},
+  year = {2014},
+  title ={The Tactile Internet},
+  url ={https://www.itu.int/dms_pub/itu-t/oth/23/01/T23010000230001PDFE.pdf},
+  month ={Aug},
+  lastaccessed ={April 5, 2018},
+}
+
+
+@misc{MemtierBenchmark,
+  key={memtier\_benchmark},
+  title= {memtier\_benchmark: A High-Throughput Benchmarking Tool for
+                  Redis \& Memcached},
+  note = {\url{https://redislabs.com/blog/memtier_benchmark-a-high-throughput-benchmarking-tool-for-redis-memcached/}},
+  month = {June},
+  year={2013}
+}
+
