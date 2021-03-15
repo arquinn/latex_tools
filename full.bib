@@ -45,6 +45,9 @@
 @STRING{OSDI10 = PROC # "9th" # OSDI}
 @STRING{OSDI12 = PROC # "10th" # OSDI}
 @STRING{OSDI14 = PROC # "11th" # OSDI}
+@STRING{OSDI16 = PROC # "12th" # OSDI}
+@STRING{OSDI18 = PROC # "13th" # OSDI}
+
 
 @STRING{NSDI = " USENIX Symposium on Networked Systems Design and Implementation"}
 @STRING{NSDI04 = PROC # "1st " # NSDI}
@@ -2843,8 +2846,12 @@ pages = {211-224}
 }
 
 @inproceedings{Adya02,
-title = {{FARSITE}: Federated, Available, and Reliable Storage for an Incompletely Trusted Environment},
-author =  {Atul Adya and William J. Bolosky and Miguel Castro and Gerald Cermak and Ronnie Chaiken and John R. Douceur and Jon Howell and Jacob R. Lorch and Marvin Theimer and Roger P. Wattenhofer},
+title = {{FARSITE}: Federated, Available, and Reliable Storage for an
+                  Incompletely Trusted Environment},
+author =  {Atul Adya and William J. Bolosky and Miguel Castro and
+                  Gerald Cermak and Ronnie Chaiken and John R. Douceur
+                  and Jon Howell and Jacob R. Lorch and Marvin Theimer
+                  and Roger P. Wattenhofer},
 booktitle = OSDI02,
 year =   {2002},
 month =  {December},
@@ -7270,7 +7277,8 @@ pages = {137--170}
 }
 
 @inProceedings{King06,
-    author = "Samuel T. King and Peter M. Chen and Yi-Min Wang and Chad Verbowski and Helen J. Wang and Jacob R. Lorch",
+    author = "Samuel T. King and Peter M. Chen and Yi-Min Wang and
+                  Chad Verbowski and Helen J. Wang and Jacob R. Lorch",
     title = "{SubVirt: Implementing malware with virtual machines}",
     booktitle = "Proceedings of the 2006 IEEE Symposium on Security and Privacy",
     year = "2006",
@@ -12774,12 +12782,283 @@ note = {\url{https://info.dynatrace.com/rs/compuware/images/Mobile_App_Survey_Re
 }
 
 
-@misc{MemtierBenchmark,
+@online{MemtierBenchmark,
   key={memtier\_benchmark},
   title= {memtier\_benchmark: A High-Throughput Benchmarking Tool for
                   Redis \& Memcached},
-  note = {\url{https://redislabs.com/blog/memtier_benchmark-a-high-throughput-benchmarking-tool-for-redis-memcached/}},
+  url = {https://redislabs.com/blog/memtier_benchmark-a-high-throughput-benchmarking-tool-for-redis-memcached/},
   month = {June},
   year={2013}
 }
 
+@article{Tassey02,
+  title={The economic impacts of inadequate infrastructure for software testing},
+  author={Tassey, George},
+  institution={National  Institute of Standards and Technology},
+  year={2002}
+}
+
+@article{Britton13,
+  title={Reversible debugging software},
+  author={Britton, Tom and Jeng, Lisa and Carver, Graham and Cheak,
+                  Paul and Katzenellenbogen, Tomer},
+  institution={University of Cambridge, Judge Business School},
+  year={2013}
+}
+
+@article{Minkel08,
+author={Minkel, JR},
+title={The 2003 Northeast Blackout---Five Years Later},
+journal={Scientific America},
+url={https://www.scientificamerican.com/article/2003-blackout-five-years-later/#sa_body},
+urldate={2021-01-20},
+year={2008},
+month={August},
+day={13},
+}
+
+
+@article{Whittaker19,
+author={Whittaker, Zack},
+title={Two years after WannaCry, a million computers remain at risk},
+journal={TechCrunch},
+url={https://techcrunch.com/2019/05/12/wannacry-two-years-on/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAALEYpWyKvZKRVKvnxSds2VD2pWM2fU7npMzkpwWT5Tn06jc27CE8oEA1tfDEe2r7yLhbAITeA5qpc4GNbYaRrt5ZJieLKw4dymSUys6E4mWS-4W0xjSUcHxjETffVN3eLpc79UaoF3ojzjeSdPMAd_l02Hk1Riz1zeXBudmnP71F},
+urldate={2021-01-20},
+year={2019},
+month={May},
+}
+
+@article{Long09,
+author={Long, Tony},
+title={July 22, 1962: Mariner 1 Done In by a Typo},
+journal={Wired},
+url={https://www.wired.com/2009/07/dayintech-0722/},
+urldate={2021-01,20},
+year={2009},
+month={July},
+}
+
+@article{Eisenstadt97,
+  title={My hairiest bug war stories},
+  author={Eisenstadt, Marc},
+  journal={Communications of the ACM},
+  volume={40},
+  number={4},
+  pages={30--37},
+  year={1997},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{Gilmore91,
+  title={Models of debugging},
+  author={Gilmore, David J},
+  journal={Acta psychologica},
+  volume={78},
+  number={1-3},
+  pages={151--172},
+  year={1991},
+  publisher={Elsevier}
+}
+
+@article{Gould74,
+  title={An exploratory study of computer program debugging},
+  author={Gould, John D and Drongowski, Paul},
+  journal={Human Factors},
+  volume={16},
+  number={3},
+  pages={258--277},
+  year={1974},
+  publisher={SAGE Publications Sage CA: Los Angeles, CA}
+}
+
+@inproceedings{Beller18,
+  title={On the dichotomy of debugging behavior among programmers},
+  author={Beller, Moritz and Spruit, Niels and Spinellis, Diomidis and
+                  Zaidman, Andy},
+  booktitle={Proceedings of the 40th International Conference on
+                  Software Engineering},
+  pages={572--583},
+  year={2018}
+}
+
+
+@inproceedings{Snodgrass84,
+ author = {Snodgrass, Richard},
+ title = {Monitoring in a Software Development Environment: A Relational Approach},
+ booktitle = {Proceedings of the First ACM SIGSOFT/SIGPLAN Software Engineering Symposium on Practical Software Development Environments},
+ series = {SDE 1},
+ year = {1984},
+ isbn = {0-89791-131-8},
+ pages = {124--131},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/800020.808257},
+ doi = {10.1145/800020.808257},
+ acmid = {808257},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@article{Liao92,
+  title={A specificational approach to high level program monitoring and measuring},
+  author={Liao, Yingsha and Cohen, Donald},
+  journal={IEEE Transactions on Software Engineering},
+  volume={18},
+  number={11},
+  pages={969--978},
+  year={1992},
+  publisher={IEEE}
+}
+
+
+@inproceedings{Selinger79,
+  title={Access path selection in a relational database management system},
+  author={Selinger, P Griffiths and Astrahan, Morton M and Chamberlin, Donald D and Lorie, Raymond A and Price, Thomas G},
+  booktitle={Proceedings of the 1979 ACM SIGMOD international conference on Management of data},
+  pages={23--34},
+  year={1979},
+  organization={ACM}
+}
+
+@article{Gray97,
+  title={Data cube: A relational aggregation operator generalizing group-by, cross-tab, and sub-totals},
+  author={Gray, Jim and Chaudhuri, Surajit and Bosworth, Adam and Layman, Andrew and Reichart, Don and Venkatrao, Murali and Pellow, Frank and Pirahesh, Hamid},
+  journal={Data mining and knowledge discovery},
+  volume={1},
+  number={1},
+  pages={29--53},
+  year={1997},
+  publisher={Springer}
+}
+
+@inproceedings{Quinn18,
+  title={Sledgehammer: Cluster-Fueled Debugging},
+  author={Quinn, Andrew and Flinn, Jason and Cafarella, Michael},
+  booktitle= OSDI18,
+  pages={545--560},
+  year={2018},
+}
+
+
+@article{Bates95,
+ author = {Bates, Peter C.},
+ title = {Debugging Heterogeneous Distributed Systems Using Event-based Models of Behavior},
+ journal = {ACM Transactions on Computer Systems},
+ volume = {13},
+ number = {1},
+ month = {February},
+ year = {1995},
+ pages = {1--31},
+ organization={ACM}
+ }
+
+
+@article{Martin05,
+  title={Finding application errors and security flaws using PQL: a program query language},
+  author={Martin, Michael and Livshits, Benjamin and Lam, Monica S},
+  journal={ACM SIGPLAN Notices},
+  volume={40},
+  number={10},
+  pages={365--383},
+  year={2005},
+  publisher={ACM}
+}
+
+@inproceedings{Goldsmith05,
+ author = {Goldsmith, Simon F. and O'Callahan, Robert and Aiken, Alex},
+ title = {Relational Queries over Program Traces},
+ booktitle = {Proceedings of the 20th Annual ACM SIGPLAN Conference on Object-oriented Programming, Systems, Languages, and Applications},
+ series = {OOPSLA '05},
+ year = {2005},
+ isbn = {1-59593-031-0},
+ location = {San Diego, CA, USA},
+ pages = {385--402},
+ numpages = {18},
+ url = {http://doi.acm.org/10.1145/1094811.1094841},
+ doi = {10.1145/1094811.1094841},
+ acmid = {1094841},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {PTQL, partiqle, program trace query language, relational},
+} 
+
+
+@inproceedings{Guo11,
+ title = {Using Automatic Persistent Memoization to Facilitate Data Analysis Scripting},
+ author = {Guo, Philip J. and Engler, Dawson},
+ booktitle = {Proceedings of the 2011 International Symposium on Software Testing and Analysis (ISSTA)},
+ year = {2011},
+ location = {Toronto, Ontario, Canada},
+ pages = {287--297},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{Cui18,
+  title={REPT: Reverse Debugging of Failures in Deployed Software},
+  author={Cui, Weidong and Ge, Xinyang and Kasikci, Baris and Niu, Ben and Sharma, Upamanyu and Wang, Ruoyu and Yun, Insu},
+  booktitle = OSDI18,
+  series = {OSDI'18},
+  pages={17--32},
+  year={2018}
+}
+
+
+@inProceedings{Lattner04,
+    author = {Chris Lattner and Vikram Adve},
+    title = {{LLVM}: A Compilation Framework for Lifelong Program Analysis and Transformation},
+    booktitle = CGO04,
+    year = "2004",
+}
+
+
+@inproceedings{Kemerlis12,
+ author = {Kemerlis, Vasileios P. and Portokalidis, Georgios and Jee, Kangkook and Keromytis, Angelos D.},
+ title = {Libdft: Practical Dynamic Data Flow Tracking for Commodity Systems},
+ booktitle = {Proceedings of the 8th ACM SIGPLAN/SIGOPS Conference on Virtual Execution Environments},
+ series = {VEE '12},
+ year = {2012},
+}
+
+
+@inproceedings{Geels07,
+ author = {Geels, Dennis and Altekar, Gautam and Maniatis, Petros and Roscoe, Timothy and Stoica, Ion},
+ title = {Friday: Global Comprehension for Distributed Replay},
+ booktitle = NSDI07,
+ series = {NSDI'07},
+ year = {2007},
+ location = {Cambridge, MA},
+ pages = {21--21},
+ numpages = {1},
+}
+
+@inproceedings{Jee12,
+author = {Kangkook Jee and Georgios Portokalidis and Vasileios P. Kermerlis and Soumyadeep Ghosh and David I. August and Angelos D. Keromyrtis},
+title = {A General Approach for Efficiently Accelerating Software-Based Dynamic Data Flow Tracking on Commodity Hardware},
+booktitle = {Proceedings of the 19th Network and Distributed System Security Symposium},
+month = {February},
+year = {2012},
+address = {San Diego, CA},
+}
+
+@article{Krasner21,
+author = {Herb Krasner},
+title = {The Cost of Software Quality in the US: A 2020 Report},
+month = {January},
+year = {2021},
+publisher = {Consortium for Information and Software Quality},
+}
+
+@misc{Mongo21568,
+note = {\url{https://jira.mongodb.org/browse/SERVER-21568}},
+}
+
+@MISC{shepardson16,
+author = {David Shepardson},
+title = {GM recalls 4.3 million vehicles over air bagrelated defect},
+editor = {reuters.com},
+month = {September},
+year = {2016},
+howpublished=
+                  {\url{https://www.reuters.com/article/us-gm-recall/gm-recalls-4-3-million-vehicles-over-air-bag-related-defect-idUSKCN11F2AH}},
+url = {https://www.reuters.com/article/us-gm-recall/gm-recalls-4-3-million-vehicles-over-air-bag-related-defect-idUSKCN11F2AH},
+note = {[Online; posted 9-September-2016]},
+}
