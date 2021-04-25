@@ -263,24 +263,24 @@
  \end{singlespace} 
 }
 
-\def\startabstractpage#1#2#3#4{% This formats the optional in-dissertation abstract - jg
+\def\startabstractpage{% This formats the optional in-dissertation abstract - jg
  \newpage
  \addcontentsline{toc}{chapter}{ABSTRACT}
  \@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn\fi
  \hbox{ }
  \twoinmar
  \centerline{\large\bf ABSTRACT}
- \vspace{0.25in}
- \begin{center}
-  \begin{singlespace}
-   #1 \\
-  \end{singlespace}
-   by \\
-   #2 \\
- \end{center}
+% \vspace{0.25in}
+% \begin{center}
+%  \begin{singlespace}
+%   #1 \\
+%  \end{singlespace}
+%   by \\
+%   #2 \\
+% \end{center}
  \vspace{0.4in}
- \noindent #3
- \vspace{0.25in}\\
+% \noindent #3
+% \vspace{0.25in}\\
 }
 
 %-- Start chapters --
